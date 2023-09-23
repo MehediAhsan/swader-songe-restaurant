@@ -1,8 +1,14 @@
-# React + Vite
+# Swader Songe - React Website with React Router DOM
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
 
-Currently, two official plugins are available:
+Welcome to the "Swader Songe" React website project! This website is built using Vite as the development environment, styled with Tailwind CSS, and uses React Router DOM for routing. It's designed to showcase the flavors and offerings of our restaurant.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
+
+To get started with this project, follow these steps:
+
+1. **Clone the Repository**: Clone this repository to your local machine using the following command:
+
+   ```bash
+   git clone https://github.com/mehediahsan/swader-songe-restaurant.git
