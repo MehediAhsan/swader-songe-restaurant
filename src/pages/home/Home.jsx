@@ -2,7 +2,7 @@ import Banner from "./Banner";
 
 const Home = () => {
     return (
-        <div className="bg-blue-400 h-screen">
+        <div>
             <Banner></Banner>
         </div>
     );

@@ -1,5 +1,6 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import '../../App.css'
 
 const Banner = () => {
     const slides = [
@@ -21,13 +22,24 @@ const Banner = () => {
         }
     ]
     return (
-        <div>
-            <Carousel showArrows={true}>
+        <div className="w-full">
+            <Carousel showArrows={true}
+      infiniteLoop={true}
+      showThumbs={true}
+      showStatus={false}
+      autoPlay={true}
+      interval={3000} // Change the interval as needed
+      stopOnHover={false}
+      dynamicHeight={true}
+      emulateTouch={true}
+      useKeyboardArrows={true}
+      swipeable={true}
+      >
                 {
                     slides.map(slide => 
                         <div key={slide.name}>
-                            <img src={slide.img} />
-                            <p className="legend">{slide.name}</p>
+                            <img src={slide.img} className="h-screen" />
+                            {/* <p className="legend">{slide.name}</p> */}
                         </div>
                     )
                 }

@@ -1,0 +1,53 @@
+/* src/styles.css */
+
+/* Style the entire thumbnails container */
+.thumbs-wrapper {
+    margin-top: 20px; /* Add margin if needed */
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Style individual thumbnail images */
+  .thumb {
+    width: 60px; /* Adjust the width as per your preference */
+    height: 40px; /* Adjust the height as per your preference */
+    margin: 5px; /* Add margin between thumbnails */
+    border: 2px solid transparent; /* Optional: Add border for styling */
+    border-radius: 4px; /* Optional: Add border radius for styling */
+  }
+  .thumb img{
+    width: 80px;
+    height: 40px;
+  }
+  
+  /* Style the selected thumbnail image */
+  .thumb.selected {
+    border-color: #333; /* Optional: Change border color for the selected thumbnail */
+  }
+  /* CarouselStyles.css */
+
+/* Style for the dot container */
+.carousel.carousel-slider .control-dots {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+  
+  /* Style for individual dots */
+  .carousel .control-dots .dot {
+    background-color: #333; /* Change the background color of the dots */
+    border-radius: 50%; /* Make the dots circular */
+    display: inline-block;
+    width: 8px; /* Adjust the width of the dots */
+    height: 8px; /* Adjust the height of the dots */
+    margin: 0 4px; /* Adjust the spacing between dots */
+    cursor: pointer;
+  }
+  
+  /* Style for the active dot */
+  .carousel .control-dots .dot.selected {
+    background-color: #ff5722; /* Change the background color of the active dot */
+  }
+  
