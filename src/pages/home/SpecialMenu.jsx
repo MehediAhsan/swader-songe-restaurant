@@ -30,6 +30,9 @@ const SpecialMenu = () => {
                     ></MenuCard>)
                 }
             </div>
+            <div className="flex justify-center my-10">
+                <button className="boder border-b-2 border-gray-800 rounded-lg px-7 py-5 text-xl font-semibold">View Full  Menu</button>
+            </div>
         </div>
     );
 };

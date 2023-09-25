@@ -26,7 +26,7 @@ const Header = () => {
     let [open, setOpen] = useState(false)
 
     return (
-        <div className="bg-black text-white w-full fixed top-0 left-0 z-10 opacity-90">
+        <div className="bg-black text-white w-full fixed top-0 left-0 z-50 opacity-90">
             <div className="md:flex items-center justify-between px-10 py-8">
                 <div>
                     <h1 className="text-2xl font-semibold">Swader Songe</h1>
