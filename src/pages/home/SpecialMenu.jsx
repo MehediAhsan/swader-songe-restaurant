@@ -2,6 +2,7 @@ import SectionHeading from "../../components/SectionHeading";
 import { useState } from 'react';
 import { useEffect } from "react";
 import MenuCard from "../shared/MenuCard";
+import Button from "../../components/Button";
 
 
 const SpecialMenu = () => {
@@ -31,7 +32,7 @@ const SpecialMenu = () => {
                 }
             </div>
             <div className="flex justify-center my-10">
-                <button className="boder border-b-2 border-gray-800 rounded-lg px-7 py-5 text-xl font-semibold">View Full  Menu</button>
+                <Button name={"View Full  Menu"} design={"px-7 py-5"}></Button>
             </div>
         </div>
     );
