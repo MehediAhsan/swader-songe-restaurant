@@ -212,7 +212,7 @@
         "name": "Escalope de Veau",
         "description": "Pan roasted haddock fillet wrapped in smoked French bacon with pea purée and tomato and chive vinaigrette",
         "image": "https://cristianonew.ukrdevs.com/wp-content/uploads/2016/08/product-2-370x247.jpg",
-        "category": "dessert",
+        "category": "drinks",
         "price": 12.5
     },
     {
@@ -388,7 +388,7 @@
         "name": "Haddock",
         "description": "Chargrilled fresh tuna steak (served medium rare) on classic Niçoise salad with French beans.",
         "image": "https://cristianonew.ukrdevs.com/wp-content/uploads/2016/08/product-1-370x247.jpg",
-        "category": "soup",
+        "category": "drinks",
         "price": 14.7
     },
     {
@@ -444,7 +444,7 @@
         "name": "Roast Duck Breast",
         "description": "Roasted duck breast (served pink) with gratin potato and a griottine cherry sauce",
         "image": "https://cristianonew.ukrdevs.com/wp-content/uploads/2016/08/product-4-370x247.jpg",
-        "category": "soup",
+        "category": "drinks",
         "price": 14.5
     },
     {
@@ -452,7 +452,7 @@
         "name": "Tuna Niçoise",
         "description": "Warm goats cheese and roasted vegetable salad with black olive tapenade crostini",
         "image": "https://cristianonew.ukrdevs.com/wp-content/uploads/2016/08/product-2-370x247.jpg",
-        "category": "soup",
+        "category": "drinks",
         "price": 10.5
     }
 ]
