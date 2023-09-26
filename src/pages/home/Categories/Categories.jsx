@@ -6,34 +6,21 @@ import "swiper/css/navigation";
 // import required modules
 import { Pagination } from "swiper/modules";
 import SectionHeading from "../../../components/SectionHeading";
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 const Categories = () => {
-  const items = [
-    {
-      name: "Salad",
-      img: "https://images.unsplash.com/photo-1513442542250-854d436a73f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1547&q=80",
-    },
-    {
-      name: "Salad",
-      img: "https://images.unsplash.com/photo-1513442542250-854d436a73f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1547&q=80",
-    },
-    {
-      name: "Salad",
-      img: "https://images.unsplash.com/photo-1513442542250-854d436a73f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1547&q=80",
-    },
-    {
-      name: "Salad",
-      img: "https://images.unsplash.com/photo-1513442542250-854d436a73f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1547&q=80",
-    },
-    {
-      name: "Salad",
-      img: "https://images.unsplash.com/photo-1513442542250-854d436a73f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1547&q=80",
-    },
-    {
-      name: "Salad",
-      img: "https://images.unsplash.com/photo-1513442542250-854d436a73f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1547&q=80",
-    },
-  ];
+  let [items, setItems] = useState([])
+
+    useEffect(() => {
+        fetch('menu.json')
+        .then(res => res.json())
+        .then (data => {
+            const specialItems = data.filter(item => item.category === 'soup')
+            setItems(specialItems)
+        })
+
+    },[])
   return (
     <div className="w-10/12 mx-auto">
       <SectionHeading
@@ -67,11 +54,13 @@ const Categories = () => {
       >
         {items.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="border rounded-md p-2">
-              <img src={item.img} alt="" className="w-full h-72 rounded-md" />
-              <h1 className="pb-16 -mt-10 text-center text-white text-3xl">
-                {item.name}
+            <div className="rounded-md relative">
+              <img src={item.image} alt="" className="w-full h-72 rounded-md" />
+              <div className="absolute inset-0 bg-black opacity-40 transition-all duration-500 border-4 border-orange-600 hover:border-white"></div>
+              <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white text-3xl uppercase font-medium mt-20">
+                {item.category}
               </h1>
+              <div className="mb-14"></div>
             </div>
           </SwiperSlide>
         ))}
