@@ -32,7 +32,7 @@ const SpecialMenu = () => {
                 }
             </div>
             <div className="flex justify-center my-10">
-                <Button name={"View Full  Menu"} design={"px-7 py-5"}></Button>
+                <Button name={"View Full  Menu"} design={"px-4 py-3 bg-gray-100 hover:bg-orange-400"}></Button>
             </div>
         </div>
     );

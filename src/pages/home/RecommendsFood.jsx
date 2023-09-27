@@ -2,6 +2,7 @@ import SectionHeading from "../../components/SectionHeading";
 import { useEffect } from 'react';
 import { useState } from 'react';
 import FoodCard from "../shared/FoodCard";
+import Button from './../../components/Button';
 
 const RecommendsFood = () => {
     let [foods, setFoods] = useState([])
@@ -26,6 +27,9 @@ const RecommendsFood = () => {
                     foods.map(food => <FoodCard key={food._id} food={food}></FoodCard>)
                 }
             </div> 
+            <div className="flex justify-center my-10">
+                <Button name={"View all food"} design={"px-4 py-3  border-orange-500 bg-gray-100 hover:bg-orange-400"}></Button>
+            </div>
         </div>
     );
 };

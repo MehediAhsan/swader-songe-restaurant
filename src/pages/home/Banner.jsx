@@ -42,17 +42,17 @@ const Banner = () => {
                             <img src={slide.img} className="h-screen" />
                             {/* <p className="legend">{slide.name}</p> */}
                             <div className="absolute inset-0 bg-black opacity-40"></div>
-                            <div className="absolute inset-0 z-1 w-1/2 mx-auto flex flex-col gap-6 justify-center items-center">
-                                <h1 className="text-4xl font-semibold text-white font-serif">Wellcome to Swader Songe</h1>
+                            <div className="absolute inset-0 z-1 w-1/2 mx-auto flex flex-col gap-3 md:gap-6 justify-center items-center">
+                                <h1 className="text-2xl md:text-4xl font-semibold text-white font-serif">Wellcome to Swader Songe</h1>
                             <button className="flex justify-center items-center gap-1 inset-0 text-xl px-5 py-1 font-semibold text-white border-2 border-orange-500 rounded-full">
                                 <span>Explore</span>
                                 <FaRegArrowAltCircleRight className="text-2xl "></FaRegArrowAltCircleRight>
                             </button>
-                            <div className="flex justify-center items-center gap-2 text-white text-2xl">
+                            <div className="flex justify-center items-center gap-2 text-white text-lg md:text-2xl">
                                 <FaPhone></FaPhone>
                             <p className="">1246-5568-1325</p>
                             </div>
-                            <div className="flex justify-center items-center gap-2 text-white text-2xl">
+                            <div className="flex justify-center items-center gap-2 text-white text-lg md:text-2xl">
                                 <span>Follow Us:</span>
                                 <FaFacebook></FaFacebook>
                                 <FaInstagram></FaInstagram>
