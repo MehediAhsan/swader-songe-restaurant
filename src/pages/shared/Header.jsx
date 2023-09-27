@@ -1,24 +1,29 @@
 import { Link } from "react-router-dom";
 import {FaBars, FaTimes} from 'react-icons/fa'
 import { useState } from "react";
+import { FaHome, FaPhone, FaUtensils, FaShoppingCart } from "react-icons/fa";
 
 const Header = () => {
     const Menus = [
         {
             name: 'Home', 
-            link:'/'
+            link:'/',
+            icon: <FaHome></FaHome>
         },
         {
             name: 'CONTACT US', 
-            link:'/'
+            link:'/',
+            icon: <FaPhone></FaPhone>
         },
         {
             name: 'Our Menu', 
-            link:'/'
+            link:'/',
+            icon: <FaUtensils></FaUtensils>
         },
         {
             name: 'Our Shop', 
-            link:'/'
+            link:'/',
+            icon: <FaShoppingCart></FaShoppingCart>
         },
 
     ]
@@ -27,7 +32,7 @@ const Header = () => {
 
     return (
         <div className="bg-black text-white w-full fixed top-0 left-0 z-50 opacity-90">
-            <div className="md:flex items-center justify-between px-10 py-8">
+            <div className="md:flex items-center justify-between px-14 py-8">
                 <div>
                     <h1 className="text-2xl font-semibold">Swader Songe</h1>
                 </div>
@@ -40,7 +45,8 @@ const Header = () => {
                     
                     <ul className={`md:flex md:items-center justify-center absolute md:static bg-black md:z-auto z-[-1] left-0 w-full md:w-auto pl-9 md:pl-0 py-4 md:py-0 uppercase ${open ? 'top-20 opacity-100': 'top-[-490px] md:opacity-100 opacity-0'} `}>
                         {
-                            Menus.map(Menu => <li key={Menu.name} className="md:ml-6 my-6 md:my-0 hover:text-orange-400">
+                            Menus.map(Menu => <li key={Menu.name} className="flex justify-center items-center gap-1 md:ml-6 my-6 md:my-0 hover:text-orange-400">
+                                <span className="text-xl">{Menu.icon}</span>
                                <Link to={Menu.link}>{Menu.name}</Link> 
                             </li>)
                         }
