@@ -46,7 +46,7 @@ const Header = () => {
                     
                     <ul className={`md:flex md:items-center justify-center absolute md:static bg-black md:z-auto z-[-1] left-0 w-full md:w-auto pl-9 md:pl-0 py-4 md:py-0 uppercase ${open ? 'top-20 opacity-100': 'top-[-490px] md:opacity-100 opacity-0'} `}>
                         {
-                            Menus.map(Menu => <li key={Menu.name} className="flex justify-center items-center gap-1 md:ml-6 my-6 md:my-0 hover:text-orange-500 font-medium">
+                            Menus.map(Menu => <li key={Menu.name} className="flex justify-center items-center gap-1 md:ml-6 my-6 md:my-0 transition duration-300 hover:text-orange-500 font-medium">
                                 <span className="text-xl text-orange-500">{Menu.icon}</span>
                                <Link to={Menu.link}>{Menu.name}</Link> 
                             </li>)

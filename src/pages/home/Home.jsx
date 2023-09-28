@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import Categories from "./Categories/Categories";
 import FeatureMenu from "./FeatureMenu";
 import RecommendsFood from "./RecommendsFood";
+import Reviews from "./Reviews/Reviews";
 import SpecialMenu from "./SpecialMenu";
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
             <SpecialMenu></SpecialMenu>
             <FeatureMenu></FeatureMenu>
             <RecommendsFood></RecommendsFood>
+            <Reviews></Reviews>
         </div>
     );
 };
