@@ -44,10 +44,9 @@ const Banner = () => {
                             <div className="absolute inset-0 bg-black opacity-40"></div>
                             <div className="absolute inset-0 z-1 w-1/2 mx-auto flex flex-col gap-3 md:gap-6 justify-center items-center">
                                 <h1 className="text-2xl md:text-4xl font-semibold text-white font-serif">Wellcome to Swader Songe</h1>
-                            <button className="flex justify-center items-center gap-1 inset-0 text-xl font-semibold text-white border-2 border-orange-500 rounded-full group relative h-12 w-32 overflow-hidden shadow-lg">
-                            <div className="absolute inset-0 w-1/4 rounded-full bg-orange-500 opacity-70 transition-all duration-300 ease-out group-hover:w-full"></div>
-                                <span className="relative group-hover:text-white">Explore</span>
-                                <FaRegArrowAltCircleRight className="text-2xl relative  group-hover:text-white"></FaRegArrowAltCircleRight>
+                            <button className="flex justify-center items-center gap-1 inset-0 text-xl px-5 py-1 font-semibold text-white border-2 border-orange-500 rounded-full">
+                                <span>Explore</span>
+                                <FaRegArrowAltCircleRight className="text-2xl "></FaRegArrowAltCircleRight>
                             </button>
                             <div className="flex justify-center items-center gap-2 text-white text-lg md:text-2xl">
                                 <FaPhone></FaPhone>
