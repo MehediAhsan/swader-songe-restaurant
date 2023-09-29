@@ -9,8 +9,17 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { useEffect, useState } from "react";
 
 const Reviews = () => {
+    let [reviews, setReviews] = useState([])
+
+    useEffect(() => {
+        fetch('reviews.json')
+        .then(res => res.json())
+        .then (data => setReviews(data))
+
+    },[])
   return (
     <div className="w-10/12 mx-auto">
       <SectionHeading
@@ -32,15 +41,7 @@ const Reviews = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        
       </Swiper>
     </div>
   );
