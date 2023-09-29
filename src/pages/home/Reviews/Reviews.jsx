@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import { useEffect, useState } from "react";
 
 const Reviews = () => {
@@ -35,13 +35,20 @@ const Reviews = () => {
           disableOnInteraction: false,
         }}
         pagination={{
-          clickable: true,
+          clickable: false,
         }}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Navigation]}
         className="mySwiper"
       >
-        
+        {
+          reviews.map(review => <SwiperSlide key={review._id}>
+            <div className="w-9/12 mx-auto text-center">
+              <p>{review.details}</p>
+              <h1 className="text-2xl uppercase text-orange-500 pt-2">{review.name}</h1>
+            </div>
+          </SwiperSlide>)
+        }
       </Swiper>
     </div>
   );
