@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Navigation } from "swiper/modules";
 import { useEffect, useState } from "react";
+import {FaQuoteLeft} from 'react-icons/fa';
 
 const Reviews = () => {
     let [reviews, setReviews] = useState([])
@@ -43,9 +44,10 @@ const Reviews = () => {
       >
         {
           reviews.map(review => <SwiperSlide key={review._id}>
-            <div className="w-9/12 mx-auto text-center">
+            <div className="w-9/12 mx-auto text-center flex flex-col gap-4 justify-center items-center">
+              <FaQuoteLeft className="text-5xl"></FaQuoteLeft>
               <p>{review.details}</p>
-              <h1 className="text-2xl uppercase text-orange-500 pt-2">{review.name}</h1>
+              <h1 className="text-2xl uppercase text-orange-500">{review.name}</h1>
             </div>
           </SwiperSlide>)
         }
