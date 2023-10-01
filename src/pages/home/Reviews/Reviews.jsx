@@ -24,7 +24,7 @@ const Reviews = () => {
 
     },[])
   return (
-    <div className="w-10/12 mx-auto">
+    <div className="w-10/12 mx-auto my-20">
       <SectionHeading
         sub={"---What out client say---"}
         main={"Customer Reviews"}
