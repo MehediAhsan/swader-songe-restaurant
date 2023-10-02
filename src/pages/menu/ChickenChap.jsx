@@ -1,35 +1,26 @@
-import { Helmet } from 'react-helmet-async';
-import Button from '../../components/Button';
-import SectionHeading from '../../components/SectionHeading';
-import SectionBox from '../shared/SectionBox';
+import SectionBox from './../shared/SectionBox';
+import Button from './../../components/Button';
 import MenuCard from './../shared/MenuCard';
-import { useEffect } from 'react';
 import { useState } from 'react';
-import ChickenChap from './ChickenChap';
+import { useEffect } from 'react';
 
-const Menu = () => {
+const ChickenChap = () => {
     let [menu, setMenu] = useState([])
 
     useEffect(() => {
         fetch('menu.json')
         .then(res => res.json())
         .then (data => {
-            const specialMenu = data.filter(item => item.category === 'offered')
+            const specialMenu = data.filter(item => item.category === 'Chicken Chap')
             setMenu(specialMenu)
         })
 
     },[])
     return (
         <div>
-            <Helmet>
-                <title>
-                    Swader Songe - Menu
-                </title>
-            </Helmet>
-            <SectionBox title={"our menu"}></SectionBox>
-             
-             <div className="w-10/12 mx-auto">
-                <SectionHeading sub={"Don't miss"} main={"Today's Offer"}></SectionHeading>
+           <SectionBox title={"Chicken chap"}></SectionBox> 
+
+           <div className="w-10/12 mx-auto mt-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {
                     menu.map(item => <MenuCard
@@ -42,11 +33,8 @@ const Menu = () => {
                     <Button name={"order your favourite one"} design={"px-4 py-3 bg-gray-100 hover:bg-orange-400"}></Button>
                 </div>
              </div>
-
-             <ChickenChap></ChickenChap>
-
         </div>
     );
 };
 
-export default Menu;
+export default ChickenChap;
