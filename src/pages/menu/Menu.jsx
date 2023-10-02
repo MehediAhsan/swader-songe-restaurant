@@ -8,6 +8,7 @@ import { useState } from 'react';
 import ChickenChap from './ChickenChap';
 import Pizza from './Pizza';
 import Burger from './Burger';
+import Soups from './Soups';
 
 const Menu = () => {
     let [menu, setMenu] = useState([])
@@ -50,6 +51,8 @@ const Menu = () => {
              <Pizza></Pizza>
 
              <Burger></Burger>
+
+             <Soups></Soups>
 
         </div>
     );
