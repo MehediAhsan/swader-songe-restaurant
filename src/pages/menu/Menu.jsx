@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import SectionBox from '../shared/SectionBox';
 
 const Menu = () => {
     return (
@@ -8,6 +9,7 @@ const Menu = () => {
                     Swader Songe - Menu
                 </title>
             </Helmet>
+            <SectionBox></SectionBox>
         </div>
     );
 };
