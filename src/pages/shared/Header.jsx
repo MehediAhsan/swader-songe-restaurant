@@ -17,7 +17,7 @@ const Header = () => {
         },
         {
             name: 'Our Menu', 
-            link:'/',
+            link:'/menu',
             icon: <FaUtensils></FaUtensils>
         },
         {
