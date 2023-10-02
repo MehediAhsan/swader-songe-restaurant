@@ -5,10 +5,16 @@ import FeatureMenu from "./FeatureMenu";
 import RecommendsFood from "./RecommendsFood";
 import Reviews from "./Reviews/Reviews";
 import SpecialMenu from "./SpecialMenu";
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
     return (
         <div>
+            <Helmet>
+                <title>
+                    Swader Songe - Home
+                </title>
+            </Helmet>
             <Banner></Banner>
             <Categories></Categories>
             <AboutSwaderSonge></AboutSwaderSonge>
