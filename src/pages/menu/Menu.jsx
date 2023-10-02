@@ -6,6 +6,8 @@ import MenuCard from './../shared/MenuCard';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import ChickenChap from './ChickenChap';
+import Pizza from './Pizza';
+import Burger from './Burger';
 
 const Menu = () => {
     let [menu, setMenu] = useState([])
@@ -44,6 +46,10 @@ const Menu = () => {
              </div>
 
              <ChickenChap></ChickenChap>
+
+             <Pizza></Pizza>
+
+             <Burger></Burger>
 
         </div>
     );
