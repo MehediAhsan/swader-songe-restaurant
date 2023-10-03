@@ -22,7 +22,7 @@ const Header = () => {
         },
         {
             name: 'Our Shop', 
-            link:'/',
+            link:'/shop',
             icon: <FaShoppingCart></FaShoppingCart>
         },
 
