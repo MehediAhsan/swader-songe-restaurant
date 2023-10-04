@@ -12,7 +12,7 @@ const Header = () => {
         },
         {
             name: 'CONTACT US', 
-            link:'/',
+            link:'/contact',
             icon: <FaEnvelope></FaEnvelope>
         },
         {
