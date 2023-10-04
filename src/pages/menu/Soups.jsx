@@ -3,6 +3,7 @@ import Button from './../../components/Button';
 import MenuCard from './../shared/MenuCard';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Soups = () => {
     let [menu, setMenu] = useState([])
@@ -29,9 +30,11 @@ const Soups = () => {
                     ></MenuCard>)
                 }
                 </div>
+                <Link to="/shop">
                 <div className="flex justify-center my-10">
                     <Button name={"order your favourite one"} design={"px-4 py-3 bg-gray-100 hover:bg-orange-400"}></Button>
                 </div>
+                </Link>
              </div>
         </div>
     );

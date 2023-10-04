@@ -9,6 +9,7 @@ import ChickenChap from './ChickenChap';
 import Pizza from './Pizza';
 import Burger from './Burger';
 import Soups from './Soups';
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
     let [menu, setMenu] = useState([])
@@ -41,9 +42,11 @@ const Menu = () => {
                     ></MenuCard>)
                 }
                 </div>
+                <Link to="/shop">
                 <div className="flex justify-center my-10">
                     <Button name={"order your favourite one"} design={"px-4 py-3 bg-gray-100 hover:bg-orange-400"}></Button>
                 </div>
+                </Link>
              </div>
 
              <ChickenChap></ChickenChap>
