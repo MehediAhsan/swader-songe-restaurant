@@ -39,6 +39,15 @@ const ContactUs = () => {
                     </div>)
                 }
             </div>
+            <SectionHeading sub={"-----Send Us a Message-----"} main={"CONTACT FORM"}></SectionHeading>
+            <div className="w-10/12 mx-auto bg-gray-200">
+                <form action="">
+                    <div>
+                        <input type="text" className="p-4" />
+                        <input type="email" name="" id="" className="p-4" />
+                    </div>
+                </form>
+            </div>
         </div>
     );
 };
