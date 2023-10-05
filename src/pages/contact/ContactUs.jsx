@@ -40,14 +40,24 @@ const ContactUs = () => {
                 }
             </div>
             <SectionHeading sub={"-----Send Us a Message-----"} main={"CONTACT FORM"}></SectionHeading>
-            <div className="w-10/12 mx-auto bg-gray-200">
-                <form action="">
-                    <div>
-                        <input type="text" className="p-4" />
-                        <input type="email" name="" id="" className="p-4" />
-                    </div>
-                </form>
-            </div>
+            <div className="max-w-md mx-auto p-6 bg-white shadow-md rounded-md">
+            <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
+            <form className="space-y-4">
+                <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-600">Your Name:</label>
+                    <input type="text" id="name" name="name" className="mt-1 p-2 w-full border rounded-md" required />
+                </div>
+                <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-600">Your Email:</label>
+                    <input type="email" id="email" name="email" className="mt-1 p-2 w-full border rounded-md" required />
+                </div>
+                <div>
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-600">Message:</label>
+                    <textarea id="message" name="message" className="mt-1 p-2 w-full border rounded-md" rows="4" required></textarea>
+                </div>
+                <button type="submit" className="bg-green-500 text-white p-2 rounded-md hover:bg-green-600 transition duration-300">Submit</button>
+            </form>
+        </div>
         </div>
     );
 };
