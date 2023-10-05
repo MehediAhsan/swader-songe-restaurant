@@ -40,9 +40,9 @@ const ContactUs = () => {
                 }
             </div>
             <SectionHeading sub={"-----Send Us a Message-----"} main={"CONTACT FORM"}></SectionHeading>
-            <div className="max-w-md mx-auto p-6 bg-white shadow-md rounded-md">
-            <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
-            <form className="space-y-4">
+            <div className="w-10/12 mx-auto p-6 shadow-md rounded-md bg-gray-100 mb-20">
+            
+            <form className="space-y-4 w-5/12 mx-auto">
                 <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-600">Your Name:</label>
                     <input type="text" id="name" name="name" className="mt-1 p-2 w-full border rounded-md" required />
