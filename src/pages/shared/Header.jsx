@@ -35,7 +35,7 @@ const Header = () => {
             <div className="flex items-center justify-between px-14 py-7">
                 <div className="flex justify-center items-center text-2xl font-semibold gap-3">
                     <FaTools className="text-orange-500 text-3xl"></FaTools>
-                    <h1 className="font-semibold font-sans italic">Swader Songe</h1>
+                    <Link to="/"><h1 className="font-semibold font-sans italic">Swader Songe</h1></Link>
                 </div>
                 <div>
                     <div onClick={() => setOpen(!open)} className="md:hidden absolute top-8 right-10 text-xl">
