@@ -2,6 +2,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import '../../App.css'
 import { FaPhone, FaFacebook, FaYoutube, FaInstagram, FaTwitter, FaRegArrowAltCircleRight } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 const Banner = () => {
     const slides = [
@@ -44,8 +45,8 @@ const Banner = () => {
                             <div className="absolute inset-0 bg-black opacity-40"></div>
                             <div className="absolute inset-0 z-1 w-1/2 mx-auto flex flex-col gap-3 md:gap-6 justify-center items-center">
                                 <h1 className="text-2xl md:text-4xl font-semibold text-white font-serif">Wellcome to Swader Songe</h1>
-                            <button className="flex justify-center items-center gap-1 inset-0 text-xl px-5 py-1 font-semibold text-white border-2 border-orange-500 rounded-full">
-                                <span>Explore</span>
+                            <button className="flex justify-center items-center gap-1 inset-0 text-xl px-3 py-1 font-semibold text-white border rounded-full bg-gray-800">
+                                <Link to="/shop"><span>Explore</span></Link>
                                 <FaRegArrowAltCircleRight className="text-2xl "></FaRegArrowAltCircleRight>
                             </button>
                             <div className="flex justify-center items-center gap-2 text-white text-lg md:text-2xl">
