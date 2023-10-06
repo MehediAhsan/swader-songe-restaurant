@@ -55,7 +55,7 @@ const ContactUs = () => {
                     <label htmlFor="message" className="block text-sm font-medium text-gray-600">Message:</label>
                     <textarea id="message" name="message" className="mt-1 p-2 w-full border rounded-md" rows="4" required></textarea>
                 </div>
-                <button type="submit" className="bg-green-500 text-white p-2 rounded-md hover:bg-green-600 transition duration-300">Submit</button>
+                <button type="submit" className="bg-orange-500 text-white p-2 rounded-md hover:bg-orange-600 transition duration-300">Submit</button>
             </form>
         </div>
         </div>
