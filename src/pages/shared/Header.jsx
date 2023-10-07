@@ -51,6 +51,7 @@ const Header = () => {
                                <Link to={Menu.link}>{Menu.name}</Link> 
                             </li>)
                         }
+                        <button className="bg-orange-500 rounded px-4 py-2 ml-6 text-lg font-medium"><Link to="/login">Login</Link></button>
                     </ul>
                 </div>
             </div>
