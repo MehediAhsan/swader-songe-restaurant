@@ -1,5 +1,6 @@
 import loginImg from '../../assets/login.json'
 import Lottie from "lottie-react";
+import {FaGoogle, FaFacebook, FaGithub} from 'react-icons/fa'
 
 const Login = () => {
     return (
@@ -20,6 +21,12 @@ const Login = () => {
                     </div>
                     <button className='bg-orange-400 p-3 rounded text-white font-medium'>Sign In</button>
                     <p className='text-orange-400 text-center'>New here? Create a New Account</p>
+                    <p className='text-gray-800 text-center'>Or sign in with</p>
+                    <div className='flex justify-center items-center gap-10 text-4xl'>
+                        <FaFacebook></FaFacebook>
+                        <FaGoogle></FaGoogle>
+                        <FaGithub></FaGithub>
+                    </div>
                 </form>
             </div>
         </div>
