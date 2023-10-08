@@ -31,7 +31,7 @@ const Header = () => {
     let [open, setOpen] = useState(false)
 
     return (
-        <div className="bg-black text-white w-full fixed top-0 left-0 z-50 opacity-90 shadow-xl">
+        <div className="bg-black text-white w-full fixed top-0 left-0 z-50 opacity-80 shadow-xl">
             <div className="flex items-center justify-between px-14 py-7">
                 <div className="flex justify-center items-center text-2xl font-semibold gap-3">
                     <FaTools className="text-orange-500 text-3xl"></FaTools>

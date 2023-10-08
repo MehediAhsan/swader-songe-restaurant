@@ -4,6 +4,14 @@ import {FaGoogle, FaFacebook, FaGithub} from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 
 const Login = () => {
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+
+        console.log(email, password);
+    }
     return (
         <div className="bg-gray-100 w-10/12 mx-auto my-44 flex">
             <div className='w-1/2'>
@@ -11,14 +19,14 @@ const Login = () => {
             </div>
             <div className='w-1/2 my-8'>
                 <h1 className='text-center text-2xl font-semibold my-4'>Login</h1>
-                <form action="" className='w-7/12 mx-auto flex flex-col gap-5'>
+                <form onSubmit={handleSubmit} action="" className='w-7/12 mx-auto flex flex-col gap-5'>
                     <div>
                         <legend className='text-lg font-medium mb-2'>Email</legend>
-                        <input type="email" name="" id="" className='p-3 w-full rounded border' placeholder='Write your email...' />
+                        <input type="email" name="email" id="" className='p-3 w-full rounded border' placeholder='Write your email...' />
                     </div>
                     <div>
                         <legend className='text-lg font-medium mb-2'>Password</legend>
-                        <input type="password" name="" id="" className='p-3 w-full rounded border' placeholder='Write your password...' />
+                        <input type="password" name="password" id="" className='p-3 w-full rounded border' placeholder='Write your password...' />
                     </div>
                     <button className='bg-orange-400 p-3 rounded text-white font-medium'>Sign In</button>
                     <Link to="/signup"><p className='text-orange-400 text-center'>New here? Create a New Account</p></Link>
