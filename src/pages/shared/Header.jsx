@@ -1,9 +1,21 @@
 import { Link } from "react-router-dom";
 import {FaBars, FaTimes} from 'react-icons/fa'
 import { useState } from "react";
-import { FaHome, FaEnvelope, FaUtensils, FaShoppingCart, FaTools } from "react-icons/fa";
+import { FaHome, FaEnvelope, FaUtensils, FaShoppingCart, FaTools, FaUser } from "react-icons/fa";
+import { useContext } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
 
 const Header = () => {
+    const {user, logOut} = useContext(AuthContext);
+
+    logOut()
+    .then(() => {
+        // Sign-out successful.
+      }).catch((error) => {
+        // An error happened.
+        console.log(error);
+      });
+
     const Menus = [
         {
             name: 'Home', 
@@ -51,7 +63,9 @@ const Header = () => {
                                <Link to={Menu.link}>{Menu.name}</Link> 
                             </li>)
                         }
-                        <button className="bg-orange-500 rounded px-4 py-2 ml-6 text-lg font-medium"><Link to="/login">Login</Link></button>
+                        {
+                            user ? <button onClick={logOut} className="text-orange-500 ml-6 text-xl font-medium flex justify-center items-center gap-2">Logout <FaUser className="text-4xl text-orange-500 border-2 rounded-full p-1"></FaUser></button> : <button className="bg-orange-500 rounded px-4 py-2 ml-6 text-lg font-medium"><Link to="/login">Login</Link></button>
+                        }
                     </ul>
                 </div>
             </div>
