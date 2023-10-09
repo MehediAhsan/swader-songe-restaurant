@@ -2,15 +2,30 @@ import loginImg from '../../assets/login.json'
 import Lottie from "lottie-react";
 import {FaGoogle, FaFacebook, FaGithub} from 'react-icons/fa'
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { AuthContext } from '../../provider/AuthProvider';
 
 const Login = () => {
+    const {signIn} = useContext(AuthContext);
     const handleSubmit = (event) => {
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
 
-        console.log(email, password);
+        signIn(email, password)
+        .then((userCredential) => {
+            // Signed in 
+            const user = userCredential.user;
+            console.log(user)
+            // ...
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode, errorMessage);
+        });
+        
     }
     return (
         <div className="bg-gray-100 w-10/12 mx-auto my-44 flex">
