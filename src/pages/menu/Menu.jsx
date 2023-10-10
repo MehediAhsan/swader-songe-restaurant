@@ -30,7 +30,7 @@ const Menu = () => {
                     Swader Songe - Menu
                 </title>
             </Helmet>
-            <SectionBox title={"our menu"}></SectionBox>
+            <SectionBox title={"our menu"} img={"https://images.unsplash.com/photo-1449198063792-7d754d6f3c80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"}></SectionBox>
              
              <div className="w-10/12 mx-auto">
                 <SectionHeading sub={"Don't miss"} main={"Today's Offer"}></SectionHeading>

@@ -1,10 +1,10 @@
 import { Parallax } from 'react-parallax';
 
-const SectionBox = ({title}) => {
+const SectionBox = ({title, img}) => {
     return (
         <Parallax
         blur={{ min: -30, max: 30 }}
-        bgImage={"https://images.unsplash.com/photo-1555992457-b8fefdd09069?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"}
+        bgImage={img}
         bgImageAlt="the dog"
         strength={-200}
     >

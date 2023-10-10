@@ -66,7 +66,7 @@ const Header = () => {
                             </li>)
                         }
                         {
-                            user ? <button title={user.displayName} onClick={handleLogOut} className="text-orange-500 ml-6 text-xl font-medium flex justify-center items-center gap-2">Logout <FaUser className="text-4xl text-orange-500 border-2 rounded-full p-1"></FaUser></button> : <button className="bg-orange-500 rounded px-4 py-2 ml-6 text-lg font-medium"><Link to="/login">Login</Link></button>
+                            user ? <button title={user.displayName} onClick={handleLogOut} className="text-orange-500 ml-6 text-xl font-medium flex justify-center items-center gap-2">Logout <FaUser className="text-4xl text-orange-500 border-2 rounded-full p-1"></FaUser></button> : <div className="flex justify-center items-center"><button className="border border-orange-500 hover:bg-orange-500 rounded px-4 py-2 ml-6 text-base font-medium uppercase"><Link to="/login">Login</Link></button></div>
                         }
                     </ul>
                 </div>

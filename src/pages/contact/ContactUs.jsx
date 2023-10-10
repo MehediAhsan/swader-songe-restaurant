@@ -22,7 +22,7 @@ const ContactUs = () => {
     ]
     return (
         <div>
-            <SectionBox title={"contact us"}></SectionBox>
+            <SectionBox title={"contact us"} img="https://images.unsplash.com/1/macbook-air-all-faded-and-stuff.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"></SectionBox>
             <SectionHeading sub={"--Visit Us--"} main={"our location"}></SectionHeading>
             <div className="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
                 {
