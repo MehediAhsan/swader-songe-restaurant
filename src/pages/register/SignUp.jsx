@@ -6,18 +6,19 @@ import { useContext } from 'react';
 import { AuthContext } from '../../provider/AuthProvider';
 
 const SignUp = () => {
-    const {createUser} = useContext(AuthContext);
+    const {createUser,userUpdateProfile} = useContext(AuthContext);
     const handleSubmit = (event) => {
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-        // const displayName = form.name.value;
+        const displayName = form.name.value;
 
         createUser(email, password)
         .then((userCredential) => {
             // Signed up 
             const user = userCredential.user;
+            userUpdateProfile(displayName)
             console.log(user)
             // ...
           })
