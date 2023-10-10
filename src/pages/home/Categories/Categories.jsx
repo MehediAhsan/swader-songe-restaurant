@@ -54,9 +54,9 @@ const Categories = () => {
       >
         {items.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="rounded-md relative">
+            <div className="rounded-md relative cursor-pointer">
               <img src={item.image} alt="" className="w-full h-72 rounded-md" />
-              <div className="absolute inset-0 bg-black opacity-40 transition-all duration-500 border-4 border-orange-600 hover:border-white"></div>
+              <div className="absolute inset-0 bg-black opacity-30 hover:opacity-50 transition-all duration-500 border-2 border-orange-600 hover:border-white"></div>
               <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white text-3xl uppercase font-medium mt-20">
                 {item.category}
               </h1>
