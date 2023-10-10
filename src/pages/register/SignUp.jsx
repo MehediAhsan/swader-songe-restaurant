@@ -12,9 +12,9 @@ const SignUp = () => {
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-        const displayName = form.name.value;
+        // const displayName = form.name.value;
 
-        createUser(email, password, displayName)
+        createUser(email, password)
         .then((userCredential) => {
             // Signed up 
             const user = userCredential.user;
