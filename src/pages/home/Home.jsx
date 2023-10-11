@@ -6,6 +6,7 @@ import RecommendsFood from "./RecommendsFood";
 import Reviews from "./Reviews/Reviews";
 import SpecialMenu from "./SpecialMenu";
 import { Helmet } from 'react-helmet-async';
+import EventsAndPromotions from "./EventsAndPromotions";
 
 const Home = () => {
     return (
@@ -22,6 +23,7 @@ const Home = () => {
             <FeatureMenu></FeatureMenu>
             <RecommendsFood></RecommendsFood>
             <Reviews></Reviews>
+            <EventsAndPromotions></EventsAndPromotions>
         </div>
     );
 };
