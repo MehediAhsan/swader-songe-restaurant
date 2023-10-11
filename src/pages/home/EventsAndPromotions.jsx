@@ -1,4 +1,5 @@
 import { FaCalendarAlt } from 'react-icons/fa';
+import SectionHeading from './../../components/SectionHeading';
 
 const eventsAndPromotionsData = [
     {
@@ -17,15 +18,19 @@ const eventsAndPromotionsData = [
 
 const EventsAndPromotions = () => {
     return (
-        <div className="py-16 bg-gray-100">
-            <div className="container mx-auto">
-                <h2 className="text-3xl font-semibold text-center mb-8">Upcoming Events and Promotions</h2>
+        <div className="pb-10">
+            <SectionHeading
+        sub={"---What Surprise---"}
+        main={"Upcoming Events and Promotions"}
+      ></SectionHeading>
+            <div className="w-10/12 mx-auto">
+                <h2 className="text-3xl font-semibold text-center mb-8"></h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {eventsAndPromotionsData.map((event, index) => (
                         <div key={index} className="bg-white shadow-md p-6 rounded-md event-card">
-                            <img src={event.image} alt={event.title} className="mb-4 rounded-md" />
+                            <img src={event.image} alt={event.title} className="mb-4 rounded-md w-full h-[300px]" />
                             <h3 className="text-xl font-semibold mb-2">{event.title}</h3>
-                            <div className="flex items-center text-gray-500 mb-4">
+                            <div className="flex items-center text-orange-500 mb-4">
                                 <FaCalendarAlt className="mr-2" />
                                 <span>{event.date}</span>
                             </div>
