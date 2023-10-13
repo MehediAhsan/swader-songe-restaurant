@@ -4,6 +4,7 @@ import {FaGoogle, FaFacebook, FaGithub} from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { AuthContext } from '../../provider/AuthProvider';
+import { Helmet } from 'react-helmet-async';
 
 const Login = () => {
     const {signIn} = useContext(AuthContext);
@@ -28,6 +29,12 @@ const Login = () => {
         
     }
     return (
+        <>
+        <Helmet>
+                <title>
+                    Swader Songe - Login
+                </title>
+            </Helmet>
         <div className="bg-gray-100 w-10/12 mx-auto my-44 flex">
             <div className='w-1/2'>
                 <Lottie animationData={loginImg} />
@@ -54,6 +61,7 @@ const Login = () => {
                 </form>
             </div>
         </div>
+        </>
     );
 };
 
