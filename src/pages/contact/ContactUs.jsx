@@ -42,8 +42,8 @@ const ContactUs = () => {
             <SectionHeading sub={"-----Send Us a Message-----"} main={"CONTACT FORM"}></SectionHeading>
             <div className="w-10/12 mx-auto p-6 shadow-md rounded-md bg-gray-100 mb-20">
             
-            <form className="space-y-4 w-6/12 mx-auto">
-                <div className="flex w-full gap-6">
+            <form className="space-y-4 md:w-6/12 mx-auto">
+                <div className="flex flex-col md:flex-row w-full gap-6">
                 <div>
                     <label htmlFor="name" className="text-base font-medium text-gray-800">Your Name:</label>
                     <input type="text" id="name" name="name" className="mt-1 p-3 w-full border rounded-md" placeholder="Write Here..." required />
@@ -53,7 +53,7 @@ const ContactUs = () => {
                     <input type="email" id="email" name="email" className="mt-1 p-3 w-full border rounded-md" placeholder="Write Here..." required />
                 </div>
                 </div>
-                <div className="flex w-full gap-6">
+                <div className="flex flex-col md:flex-row w-full gap-6">
                 <div>
                     <label htmlFor="phone" className="text-base font-medium text-gray-800">Phone Number:</label>
                     <input type="number" id="name" name="name" className="mt-1 p-3 w-full border rounded-md" placeholder="Write Here..." required />
