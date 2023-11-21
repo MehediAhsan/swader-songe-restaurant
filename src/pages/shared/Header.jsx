@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import {FaBars, FaTimes} from 'react-icons/fa'
+import {FaBars, FaThLarge, FaTimes} from 'react-icons/fa'
 import { useState } from "react";
 import { FaHome, FaEnvelope, FaUtensils, FaShoppingCart, FaTools, FaUser } from "react-icons/fa";
 import { useContext } from "react";
@@ -39,6 +39,11 @@ const Header = () => {
             link:'/shop',
             icon: <FaShoppingCart></FaShoppingCart>
         },
+        {
+            name: 'Dahsboard', 
+            link:'/dashboard',
+            icon: <FaThLarge></FaThLarge>
+        }
 
     ]
 
