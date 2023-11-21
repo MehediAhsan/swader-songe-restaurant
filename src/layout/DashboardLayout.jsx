@@ -1,13 +1,13 @@
 import { Outlet } from "react-router-dom";
-import Header from "./../pages/shared/Header";
 import SideBar from "./../pages/shared/SideBar";
 import Footer from "./../pages/shared/Footer";
+import DashboardHeader from "../dashboard/DashboardHeader";
 
 const DashboardLayout = () => {
   return (
     <div className="flex flex-col">
-      <Header></Header>
-      <div className="flex h-screen">
+      <DashboardHeader></DashboardHeader>
+      <div className="flex h-screen p-4 gap-4">
         <SideBar />
         <Outlet></Outlet>
       </div>
