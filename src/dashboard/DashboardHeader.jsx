@@ -29,7 +29,6 @@ const DashboardHeader = () => {
             link:'/dashboard',
             icon: <FaThLarge></FaThLarge>
         }
-
     ]
 
     let [open, setOpen] = useState(false)
