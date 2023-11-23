@@ -1,23 +1,37 @@
-import { FaThLarge, FaUser, FaCog, FaChartBar } from "react-icons/fa";
+import { FaThLarge, FaUser, FaCog, FaChartBar, FaCalendar, FaEnvelope } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const SideBar = () => {
   const menu = [
     {
       name: "Dashboard",
-      link: "/"
+      link: "/",
+      icon: <FaThLarge />
     },
     {
       name: "Profile",
-      link: "/profile"
+      link: "/profile",
+      icon: <FaUser />
     },
     {
       name: "Settings",
-      link: "/settings"
+      link: "/settings",
+      icon: <FaCog />
     },
     {
       name: "Analytics",
-      link: "/analytics"
+      link: "/analytics",
+      icon: <FaChartBar />
+    },
+    {
+      name: "Calendar",
+      link: "/calendar",
+      icon: <FaCalendar />
+    },
+    {
+      name: "Messages",
+      link: "/messages",
+      icon: <FaEnvelope />
     }
   ];
 
@@ -34,9 +48,10 @@ const SideBar = () => {
           <Link
             to={item.link}
             key={index}
-            className="block py-2 px-4 text-gray-700 hover:bg-gray-300 hover:text-black rounded transition duration-300"
+            className="flex items-center py-2 px-4 text-gray-700 hover:bg-gray-300 hover:text-black rounded transition duration-300"
           >
-            {item.name}
+            {item.icon}
+            <span className="ml-2">{item.name}</span>
           </Link>
         ))}
       </div>
