@@ -45,7 +45,7 @@ const Banner = () => {
                             <div className="absolute inset-0 bg-black opacity-40"></div>
                             <div className="absolute inset-0 z-1 w-1/2 mx-auto flex flex-col gap-3 md:gap-6 justify-center items-center">
                                 <h1 className="text-2xl md:text-4xl font-semibold text-white font-serif">Wellcome to Swader Songe</h1>
-                            <button className="flex justify-center items-center gap-1 inset-0 text-xl px-3 py-1 font-semibold text-white border rounded-full bg-gray-800">
+                            <button className="flex justify-center items-center gap-1 inset-0 text-xl px-3 py-1 font-semibold text-white border rounded-full bg-orange-500">
                                 <Link to="/shop"><span>Explore</span></Link>
                                 <FaRegArrowAltCircleRight className="text-2xl "></FaRegArrowAltCircleRight>
                             </button>
