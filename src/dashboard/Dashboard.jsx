@@ -20,7 +20,7 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className="bg-gray-200 rounded shadow w-full p-10">
+    <div className="bg-gray-100 rounded shadow w-full p-10">
       <h2 className="text-2xl font-semibold mb-4">Dashboard Content</h2>
       <p>
         Welcome to your dashboard! This is a simple example of a dashboard content section. You can customize and add various components, charts, or data visualizations here.
