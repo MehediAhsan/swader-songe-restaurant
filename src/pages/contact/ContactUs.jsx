@@ -56,7 +56,7 @@ const ContactUs = () => {
                 <div className="flex flex-col md:flex-row w-full gap-6">
                 <div>
                     <label htmlFor="phone" className="text-base font-medium text-gray-800">Phone Number:</label>
-                    <input type="number" id="name" name="name" className="mt-1 p-3 w-full border rounded-md" placeholder="Write Here..." required />
+                    <input type="number" id="name" name="name" className="mt-1 p-3 w-full border rounded-md" placeholder="Write Here..." onWheel={(e) => e.currentTarget.blur()} required />
                 </div>
                 <div>
                     <label htmlFor="address" className="text-base font-medium text-gray-800">Your Address:</label>
