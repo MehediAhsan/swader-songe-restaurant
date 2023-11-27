@@ -90,7 +90,7 @@ const Header = () => {
             <li className="flex justify-center items-center gap-1 md:ml-6 my-6 md:my-0 transition duration-300 hover:text-orange-500 font-medium">
               <span className="text-2xl text-orange-500 relative">
                 <FaShoppingCart></FaShoppingCart>
-                <span className="absolute bg-white right-0 top-2 left-2 px-1 rounded-full bottom-0 text-xs">{cart}</span>
+                <span className="absolute text-white left-3 top-2 px-1 rounded-full bottom-0 text-lg">{cart}</span>
               </span>
               <Link to="/shop">Our Shop</Link>
             </li>
