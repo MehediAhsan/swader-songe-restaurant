@@ -1,4 +1,4 @@
-import { FaThLarge, FaUser, FaCog, FaChartBar, FaCalendar, FaEnvelope } from "react-icons/fa";
+import { FaThLarge, FaUser, FaCog, FaChartBar, FaCalendar, FaEnvelope, FaTools } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const SideBar = () => {
@@ -36,19 +36,19 @@ const SideBar = () => {
   ];
 
   return (
-    <div className="bg-gray-100 w-72 rounded shadow">
-      <div className="flex justify-center items-center text-xl font-semibold gap-2 bg-orange-200 rounded p-2">
-        <FaThLarge className="text-black text-xl" />
-        <Link to="/dashboard">
-          <h1 className="font-semibold font-sans uppercase">Dashboard</h1>
+    <div className="bg-primary w-72 rounded shadow">
+      <div className="flex justify-center items-center text-xl font-semibold gap-2 rounded pt-8">
+        <FaTools className="text-black text-xl" />
+        <Link to="/">
+          <h1 className="font-semibold font-sans italic">Swader Songe</h1>
         </Link>
       </div>
-      <div className="p-4">
+      <div className="p-6">
         {menu.map((item, index) => (
           <Link
             to={item.link}
             key={index}
-            className="flex items-center py-2 px-4 text-gray-700 hover:bg-gray-300 hover:text-black rounded transition duration-300"
+            className="flex items-center py-3 px-4 text-gray-800 hover:text-gray-100 rounded transition duration-300 text-sm"
           >
             {item.icon}
             <span className="ml-2">{item.name}</span>
