@@ -5,7 +5,7 @@ const SideBar = () => {
   const menu = [
     {
       name: "Dashboard",
-      link: "/",
+      link: "/dashboard",
       icon: <FaThLarge />
     },
     {
