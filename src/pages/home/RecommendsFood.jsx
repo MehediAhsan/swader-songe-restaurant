@@ -1,7 +1,7 @@
 import SectionHeading from "../../components/SectionHeading";
 import { useEffect } from 'react';
 import { useState } from 'react';
-import FoodCard from "../shared/FoodCard";
+import FoodCard from "../../components/shared/FoodCard";
 import Button from './../../components/Button';
 
 const RecommendsFood = () => {

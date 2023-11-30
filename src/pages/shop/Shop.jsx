@@ -1,6 +1,6 @@
 
 import { Helmet } from 'react-helmet-async';
-import SectionBox from './../shared/SectionBox';
+import SectionBox from './../../components/shared/SectionBox';
 import { useState } from 'react';
 import FoodCategory from './FoodCategory';
 

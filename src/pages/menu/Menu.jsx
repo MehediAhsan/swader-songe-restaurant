@@ -1,8 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 import Button from '../../components/Button';
 import SectionHeading from '../../components/SectionHeading';
-import SectionBox from '../shared/SectionBox';
-import MenuCard from './../shared/MenuCard';
+import SectionBox from './../../components/shared/SectionBox';
+import MenuCard from './../../components/shared/MenuCard';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import ChickenChap from './ChickenChap';

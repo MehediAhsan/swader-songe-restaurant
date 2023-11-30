@@ -1,6 +1,6 @@
-import SectionBox from './../shared/SectionBox';
+import SectionBox from './../../components/shared/SectionBox';
 import Button from './../../components/Button';
-import MenuCard from './../shared/MenuCard';
+import MenuCard from './../../components/shared/MenuCard';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';

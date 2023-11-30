@@ -1,5 +1,5 @@
 import SectionHeading from "../../components/SectionHeading";
-import SectionBox from "../shared/SectionBox";
+import SectionBox from "../../components/shared/SectionBox";
 import { FaLocationArrow, FaPhone, FaTimesCircle } from 'react-icons/fa';
 
 const ContactUs = () => {

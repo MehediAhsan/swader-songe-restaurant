@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
-import FoodCard from './../shared/FoodCard';
+import FoodCard from './../../components/shared/FoodCard';
 
 const FoodCategory = ({selectedFood}) => {
     let [foods, setFoods] = useState([])

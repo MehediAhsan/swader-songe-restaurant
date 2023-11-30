@@ -1,7 +1,7 @@
 import SectionHeading from "../../components/SectionHeading";
 import { useState } from 'react';
 import { useEffect } from "react";
-import MenuCard from "../shared/MenuCard";
+import MenuCard from "../../components/shared/MenuCard";
 import Button from "../../components/Button";
 
 
