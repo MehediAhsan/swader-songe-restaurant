@@ -1,7 +1,11 @@
-import { FaThLarge, FaUser, FaCog, FaChartBar, FaCalendar, FaEnvelope, FaTools } from "react-icons/fa";
+import { FaThLarge, FaUser, FaCog, FaChartBar, FaCalendar, FaEnvelope, FaTools, FaBars } from "react-icons/fa";
+import { ImCross } from "react-icons/im";
 import { Link } from "react-router-dom";
+import { useState } from 'react';
 
 const SideBar = () => {
+  const [open, setOpen] = useState(false);
+
   const menu = [
     {
       name: "Dashboard",
@@ -36,7 +40,10 @@ const SideBar = () => {
   ];
 
   return (
-    <div className="bg-primary w-72 rounded shadow">
+    <>
+      <FaBars onClick={() => setOpen(!open)} className={`${open && "hidden"} text-orange-500 absolute top-8 left-8 text-xl block lg:hidden`}></FaBars>
+      <ImCross onClick={() => setOpen(!open)} className={`${!open && "hidden"}  absolute top-8 left-8 text-white z-10 text-xl block lg:hidden`}></ImCross>
+    <div className={`${open ? "absolute top-6": "hidden"} bg-primary w-72 rounded shadow lg:block`}>
       <div className="flex justify-center items-center text-xl font-semibold gap-2 rounded pt-8">
         <FaTools className="text-black text-xl" />
         <Link to="/">
@@ -56,6 +63,7 @@ const SideBar = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 

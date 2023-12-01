@@ -15,7 +15,7 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className="bg-gray-100 rounded shadow w-full p-10 min-h-screen">
+    <div className="bg-gray-100 rounded shadow w-full p-10">
       <h2 className="text-2xl font-semibold mb-8">Dashboard Content</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         {activities.map((activity, i) => {
@@ -33,7 +33,7 @@ const Dashboard = () => {
         })}
       </div>
 
-      <div className="grid grid-cols-2 my-10 divide-x-4 divide-primary">
+      <div className="grid grid-cols-1 md:grid-cols-2 my-10 divide-y-4 md:divide-y-0 md:divide-x-4 divide-primary">
         <div className="flex flex-col gap-4 justify-center items-center bg-pink-100 p-16">
           <img
             className="h-40 w-40 rounded-full"

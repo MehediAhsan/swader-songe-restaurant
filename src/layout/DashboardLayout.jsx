@@ -5,9 +5,11 @@ import SideBar from "./../components/shared/SideBar";
 const DashboardLayout = () => {
   return (
     <div className="flex flex-col">
-      <div className="flex h-screen p-4 gap-4">
+      <div className="flex p-6 gap-6">
         <SideBar />
-        <Outlet></Outlet>
+        <div className="w-full">
+          <Outlet></Outlet>
+        </div>
       </div>
       <Footer />
     </div>
