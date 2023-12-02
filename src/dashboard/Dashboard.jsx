@@ -1,7 +1,7 @@
-import { useState } from 'react';
+
+import { useEffect, useState } from "react";
 
 const Dashboard = () => {
-
   const activities = [
     {
       timestamp: "200",
@@ -17,8 +17,7 @@ const Dashboard = () => {
     },
   ];
 
-  const [image, setImage] = useState(null);
-  const [preview, setPreview] = useState('');
+  const [image, setImage] = useState(null)
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
@@ -29,13 +28,17 @@ const Dashboard = () => {
 
       reader.onloadend = () => {
         // Set the preview and the base64-encoded image
-        setPreview(reader.result);
-        setImage(btoa(reader.result));
+        setImage(btoa(reader.result))
+        localStorage.setItem("image", btoa(reader.result));
       };
 
       reader.readAsBinaryString(file);
     }
   };
+
+  useEffect(() => {
+     setImage(localStorage.getItem("image"))
+  }, [image]);
 
   return (
     <div className="bg-gray-100 rounded shadow w-full p-10">
@@ -60,17 +63,11 @@ const Dashboard = () => {
         <div className="flex flex-col gap-4 justify-center items-center bg-pink-100 p-16">
           <img
             className="h-40 w-40 rounded-full"
-            src={preview}
+            src={`data:image/jpeg;base64,${image}`}
             alt=""
           />
           <h1 className="text-2xl font-semibold">Md Mehedi Ahsan</h1>
           <input type="file" accept="image/*" onChange={handleImageChange} />
-          {image && (
-        <div>
-          <h3>Base64 Encoded Image</h3>
-          <img src={image} alt="Encoded Image" style={{ maxWidth: '100%', maxHeight: '200px' }} />
-        </div>
-      )}
         </div>
 
         <div className="flex flex-col justify-center items-center gap-4 bg-yellow-100 text-gray-800">
