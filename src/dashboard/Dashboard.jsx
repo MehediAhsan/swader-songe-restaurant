@@ -67,7 +67,10 @@ const Dashboard = () => {
             alt=""
           />
           <h1 className="text-2xl font-semibold">Md Mehedi Ahsan</h1>
-          <input type="file" accept="image/*" onChange={handleImageChange} />
+          <label className="bg-white px-6 py-2 rounded border-4 text-gray-800 font-medium cursor-pointer">
+            Update your picture
+          <input type="file" accept="image/*" onChange={handleImageChange} className="hidden"/>
+          </label>
         </div>
 
         <div className="flex flex-col justify-center items-center gap-4 bg-yellow-100 text-gray-800">
