@@ -37,13 +37,13 @@ const SignUp = () => {
                     Swader Songe - SignUp
                 </title>
             </Helmet>
-        <div className="bg-gray-100 w-10/12 mx-auto my-44 flex flex-row-reverse">
+        <div className="bg-gray-100 w-10/12 mx-auto my-44 flex flex-row-reverse items-center">
             <div className='w-1/2'>
                 <Lottie animationData={loginImg} />
             </div>
             <div className='w-1/2 my-8'>
-                <h1 className='text-center text-2xl font-semibold my-4'>SignUp</h1>
-                <form onSubmit={handleSubmit} action="" className='w-7/12 mx-auto flex flex-col gap-5'>
+                <h1 className='text-center text-2xl font-semibold my-4'>Sign Up</h1>
+                <form onSubmit={handleSubmit} action="" className='w-7/12 mx-auto flex flex-col gap-4'>
                     <div>
                         <legend className='text-lg font-medium mb-2'>Name</legend>
                         <input type="text" name="name" id="" className='p-3 w-full rounded border' placeholder='Write your name...' />
