@@ -10,6 +10,7 @@ import Pizza from './Pizza';
 import Burger from './Burger';
 import Soups from './Soups';
 import { Link } from 'react-router-dom';
+import { ScrollUp } from './../../helpers/ScrollUp';
 
 const Menu = () => {
     let [menu, setMenu] = useState([])
@@ -23,6 +24,7 @@ const Menu = () => {
         })
 
     },[])
+    ScrollUp();
     return (
         <div>
             <Helmet>

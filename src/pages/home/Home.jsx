@@ -7,8 +7,10 @@ import Reviews from "./Reviews/Reviews";
 import SpecialMenu from "./SpecialMenu";
 import { Helmet } from 'react-helmet-async';
 import EventsAndPromotions from "./EventsAndPromotions";
+import { ScrollUp } from './../../helpers/ScrollUp';
 
 const Home = () => {
+    ScrollUp();
     return (
         <div>
             <Helmet>

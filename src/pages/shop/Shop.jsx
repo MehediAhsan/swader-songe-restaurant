@@ -1,14 +1,14 @@
-
 import { Helmet } from 'react-helmet-async';
 import SectionBox from './../../components/shared/SectionBox';
 import { useState } from 'react';
 import FoodCategory from './FoodCategory';
+import { ScrollUp } from '../../helpers/ScrollUp';
 
 const Shop = () => {
     const items = ['burger', 'Chicken Chap', 'pizza', 'soup']
     const [selectedFood, setSelectedFood] = useState('burger');
 
-
+    ScrollUp();
     return (
         <div>
             <Helmet>

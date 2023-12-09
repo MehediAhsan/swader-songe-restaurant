@@ -1,6 +1,7 @@
 import SectionHeading from "../../components/SectionHeading";
 import SectionBox from "../../components/shared/SectionBox";
 import { FaLocationArrow, FaPhone, FaTimesCircle } from 'react-icons/fa';
+import { ScrollUp } from "../../helpers/ScrollUp";
 
 const ContactUs = () => {
     const places =[
@@ -20,6 +21,7 @@ const ContactUs = () => {
             description: '+38 (012) 34 56 789'
         },
     ]
+    ScrollUp();
     return (
         <div>
             <SectionBox title={"contact us"} img="https://images.unsplash.com/1/macbook-air-all-faded-and-stuff.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"></SectionBox>
